@@ -1,0 +1,494 @@
+html {
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  font-size: 20px;
+  margin: 0;
+}
+
+.container {
+  max-width: 1280px;
+  padding: 0 80px;
+  margin: 0 auto;
+
+  position: relative;
+}
+
+.header {
+  max-height: 75px;
+  padding: 10px 0;
+  background-color: #FFD75E;
+
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+ul,
+ol {
+  list-style: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+img.icon {
+  width: 55px;
+  height: 55px;
+}
+
+img.user {
+  width: 55px;
+  height: 55px;
+}
+
+.navbar-list {
+  max-width: 1280px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar-list li {
+  display: inline-block;
+}
+
+.navbar-list a {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.navbar-list__item {
+  font-size: 24px;
+  color: #000;
+  font-weight: 500;
+}
+
+.navbar-list__item:hover {
+  color: #1E2A65;
+  transition: 0.5s;
+}
+
+/* авторизация */
+
+.card-entrance {
+  width: 545px;
+  height: 420px;
+  background: #EFEFEF;
+  text-align: center;
+
+  margin: 0 auto;
+  /* Для центрирования по горизонтали */
+  margin-top: 45vh;
+  /* Для центрирования по вертикали (половина высоты экрана) */
+  transform: translateY(-50%);
+}
+
+input {
+  width: 450px;
+  height: 50px;
+  border: 0;
+  background-color: white;
+
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 200;
+  color: #B3AFAF;
+  padding-left: 17px;
+}
+
+input:hover {
+  outline: #B3AFAF 1px solid;
+}
+
+.form-group {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.card-entrance__title {
+  font-size: 24px;
+  font-weight: 500;
+  padding-top: 39px;
+  padding-bottom: 5px;
+}
+
+button {
+  background-color: #FFD75E;
+  width: 200px;
+  height: 50px;
+  border: 0;
+  font-size: 24px;
+  color: white;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: #FFC61B;
+}
+
+button::before {
+  transform: translateY(1px);
+
+}
+
+.registration {
+  font-size: 20px;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.68);
+}
+
+.registration:hover {
+  color: #1E2A65;
+  transition: 0.5s;
+}
+
+/* who are you */
+
+.card-registration {
+  background-color: #EFEFEF;
+  width: 545px;
+  height: 385px;
+
+  margin: 0 auto;
+  /* Для центрирования по горизонтали */
+  margin-top: 45vh;
+  /* Для центрирования по вертикали (половина высоты экрана) */
+  transform: translateY(-50%);
+
+
+}
+
+.card-registration__title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 500;
+  color: #000;
+  padding-top: 50px;
+}
+
+.form-group-registration__item {
+  margin-top: 65px;
+  margin-bottom: 65px;
+  text-align: center;
+}
+
+
+.form-group-registration__link-pupil {
+  background-color: #FFD75E;
+  padding: 15px 100px;
+
+
+  color: white;
+  font-size: 24px;
+  font-weight: 500;
+
+  transition: background-color 0.2s ease-in-out;
+}
+
+.form-group-registration__link-pupil:hover {
+  background-color: #FFC61B;
+}
+
+.form-group-registration__link-teacher {
+  background-color: #FFD75E;
+  padding: 15px 105px;
+
+
+  color: white;
+  font-size: 24px;
+  font-weight: 500;
+
+  transition: background-color 0.2s ease-in-out;
+}
+
+.form-group-registration__link-teacher:hover {
+  background-color: #FFC61B;
+}
+
+.entrance__text {
+  color: rgba(0, 0, 0, 0.68);
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+  margin: 0;
+}
+
+.entrance__link {
+  color: rgba(0, 0, 0, 0.68);
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.entrance__link:hover {
+  color: #1E2A65;
+  transition: 0.5s;
+}
+
+
+.main {
+  max-height: 970px;
+}
+
+/* ученик */
+.card-registration-pupil {
+  background: #EFEFEF;
+  width: 545px;
+  height: 815px;
+  text-align: center;
+
+  margin: 0 auto;
+  /* Для центрирования по горизонтали */
+  margin-top: 45vh;
+  /* Для центрирования по вертикали (половина высоты экрана) */
+  transform: translateY(-50%);
+
+}
+
+.card-registration__title {
+  padding-top: 30px;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+/* учитель */
+.card-registration-teacher {
+  background: #EFEFEF;
+  width: 545px;
+  height: 815px;
+  text-align: center;
+
+  margin: 0 auto;
+  /* Для центрирования по горизонтали */
+  margin-top: 45vh;
+  /* Для центрирования по вертикали (половина высоты экрана) */
+  transform: translateY(-50%);
+
+}
+
+.card-registration__title {
+  padding-top: 30px;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+@media (max-width: 744px) {
+  .container {
+    max-width: 744px;
+    padding: 0 40px;
+  }
+
+  /* авторизация */
+  .card-entrance {
+    width: 445px;
+    height: 344px;
+  }
+
+  input {
+    width: 367px;
+    height: 41px;
+  }
+
+  .form-group {
+    padding-top: 14px;
+    padding-bottom: 14px;
+  }
+
+  .card-entrance__title {
+    padding-top: 32px;
+    padding-bottom: 5px;
+  }
+
+  /* выбор пользователя */
+  .card-registration {
+    width: 444px;
+    height: 338px;
+  }
+
+  .card-registration__title {
+    padding-top: 43px;
+  }
+
+  .form-group-registration__item {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .form-group-registration__link-pupil {
+    background-color: #FFD75E;
+    padding: 12px 70px;
+  }
+
+  .form-group-registration__link-teacher {
+    background-color: #FFD75E;
+    padding: 12px 75px;
+  }
+
+  .entrance__text {
+    margin-top: -5px;
+  }
+
+  /* ученик */
+  .card-registration-pupil {
+    width: 383px;
+    height: 624px;
+  }
+
+  .card-registration__title {
+    padding-top: 29px;
+  }
+
+  input.ipad {
+    width: 316px;
+    height: 38px;
+  }
+
+  /* учитель */
+  .card-registration-teacher {
+    width: 383px;
+    height: 624px;
+  }
+
+  .card-registration__title {
+    padding-top: 29px;
+  }
+}
+
+@media (max-width: 500px) {
+  body {
+    font-size: 20px;
+  }
+
+  .container {
+    max-width: 430px;
+    padding: 0 20px;
+    margin: -14px 0;
+  }
+
+  .header {
+    max-height: 50px;
+    margin: 0;
+  }
+
+  img {
+    width: 30px;
+    height: 30px;
+  }
+
+  /* авторизация */
+  .card-entrance {
+    width: 273px;
+    height: 216px;
+  }
+
+  input {
+    width: 225px;
+    height: 25px;
+    font-size: 16px;
+  }
+
+  input.ipad {
+    font-size: 16px;
+  }
+
+  .form-group {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .card-entrance__title {
+    padding-top: 10px;
+    padding-bottom: 5px;
+    margin: 0;
+  }
+
+  button {
+    background-color: #FFD75E;
+    width: 101px;
+    height: 26px;
+    font-size: 16px;
+    margin-bottom: 7px;
+    margin-top: 7px;
+  }
+
+  .registration {
+    font-size: 16px;
+  }
+
+  /* выбор пользователя */
+  .card-registration {
+    width: 273px;
+    height: 213px;
+  }
+
+  .card-registration__title {
+    margin: 0;
+    padding-top: 4px;
+  }
+
+  .form-group-registration__item {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .form-group-registration__link-pupil {
+    background-color: #FFD75E;
+    padding: 8px 40px;
+    font-size: 16px;
+  }
+
+  .form-group-registration__link-teacher {
+    background-color: #FFD75E;
+    padding: 8px 43px;
+    font-size: 16px;
+  }
+
+  .entrance__text {
+    margin-top: -5px;
+  }
+
+  /* ученик */
+  .card-registration-pupil {
+    width: 249px;
+    height: 417px;
+  }
+
+  .card-registration__title {
+    padding-top: 15px;
+  }
+
+
+  /* учитель */
+  .card-registration-teacher {
+    width: 249px;
+    height: 417px;
+  }
+
+  .card-registration__title {
+    padding-top: 15px;
+  }
+
+  input.ipad {
+    width: 206px;
+    height: 25px;
+  }
+
+  .entrance__text {
+    font-size: 16px;
+  }
+
+  .entrance__link {
+    font-size: 16px;
+  }
+}
